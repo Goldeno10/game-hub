@@ -4,10 +4,10 @@ import { useColorMode } from "./ui/color-mode";
 
 const ColoModeSwitch = () => {
   const { toggleColorMode, colorMode } = useColorMode();
-  // console.log(">>>>>>>>>>>>>>>>>>>>>  ", colorMode);
+
   return (
     <HStack>
-      <Switch isChecked={true} onChange={toggleColorMode} />
+      <Switch checked={colorMode === "dark"} onChange={toggleColorMode} />
       <Text>Dark</Text>
     </HStack>
   );
