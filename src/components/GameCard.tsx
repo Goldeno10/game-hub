@@ -10,8 +10,8 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card.Root width="300px">
-      <Image src={ getCropedImageUrl(game.background_image)} alt={game.name} />
+    <Card.Root width="100%">
+      <Image src={getCropedImageUrl(game.background_image)} alt={game.name} />
       <Card.Body>
         <Card.Title fontSize={"2xl"}>{game.name}</Card.Title>
         <HStack justifyContent="space-between">

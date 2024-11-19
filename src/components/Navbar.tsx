@@ -5,7 +5,7 @@ import ColoModeSwitch from "./ColoModeSwitch";
 const Navbar = () => {
   return (
     <HStack p={4} m={4}>
-      <Image src={logo} alt="logo" boxSize="50px" />
+      <Image src={logo} alt="logo" boxSize="30px" overflow="hidden" />
       <Text>Home</Text>
       <Spacer />
       <ColoModeSwitch />
