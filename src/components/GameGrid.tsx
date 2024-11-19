@@ -15,9 +15,7 @@ const GameGrid = () => {
         overflow={"hidden"}
         padding={10}
       >
-        {/* <SimpleGrid columns={3} gap={10} borderRadius={10} overflow={"hidden"}> */}
         {games.map((game) => (
-          //   <li key={game.id}>{game.name}</li>
           <GameCard key={game.id} game={game} />
         ))}
       </SimpleGrid>
