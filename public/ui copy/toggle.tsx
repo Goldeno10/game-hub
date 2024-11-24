@@ -22,7 +22,7 @@ const variantMap = {
 
 export const Toggle = React.forwardRef<HTMLButtonElement, ToggleProps>(
   function Toggle(props, ref) {
-    const { variant = "subtle", size, children, ...rest } = props as ToggleProps
+    const { variant = "subtle", size, children, ...rest } = props
     const variantConfig = variantMap[variant]
 
     return (

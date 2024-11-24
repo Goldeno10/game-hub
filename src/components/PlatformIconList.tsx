@@ -36,7 +36,7 @@ const PlatformIconList = ({ platforms }: PlatformIconListProps) => {
     <>
       <HStack margin={1}>
         {platforms.map((platform) => (
-          <Icon color={"gray.500"}>
+          <Icon key={platform.id} color={"gray.500"}>
             {platformIcons[platform.slug] ? (
               React.createElement(platformIcons[platform.slug])
             ) : (
