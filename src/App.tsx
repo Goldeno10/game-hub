@@ -7,13 +7,13 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import GameGrid from "./components/GameGrid";
+import GameHeading from "./components/GameHeading";
 import GenreList from "./components/GenreList";
 import Navbar from "./components/Navbar";
 import PlatformSelector from "./components/PlatformSelector";
+import { SortSelector } from "./components/SortSelector";
 import { Platform } from "./hooks/useGames";
 import { Genre } from "./hooks/useGenre";
-import { SortSelector } from "./components/SortSelector";
-import GameHeading from "./components/GameHeading";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -23,11 +23,6 @@ export interface GameQuery {
 }
 
 function App() {
-  // const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
-  // const [selectedPlactform, setSelectedPlatform] = useState<Platform | null>(
-  //   null
-  // );
-
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
   return (
