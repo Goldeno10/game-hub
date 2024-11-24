@@ -5,10 +5,8 @@ import GameCardSkeleton from "./GameCardSkeleton";
 import { Genre } from "@/hooks/useGenre";
 import { GameQuery } from "@/App";
 
-interface Props {
+export interface Props {
   gameQuery: GameQuery;
-  // selectedGenre: Genre | null;
-  // selectedPlatform: Platform | null;
 }
 
 // const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
