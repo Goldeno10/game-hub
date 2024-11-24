@@ -44,7 +44,6 @@ const PlatformIconList = ({ platforms }: PlatformIconListProps) => {
             )}
           </Icon>
         ))}
-        
       </HStack>
     </>
   );
